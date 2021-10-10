@@ -82,3 +82,37 @@ while(j <= 20){
   j++;
 }
 
+// even & odd numbers
+let num=10;
+if(num%2==0){
+  console.log("Even");
+}
+else{
+  console.log("Odd");
+}
+
+
+// Leap year
+let curr_year=new Date().getFullYear();
+curr_year%2==0 ? console.log("Even") : console.log("Odd");
+
+// squares of numbers
+let squared= new Array(10);
+for(let i=1;i<11;i++){
+  squared=i**2;
+}
+console.log(squared);
+
+
+// Multiplication table
+let row =new Array(5);
+for(let i=0; i<5;i++){
+  row[i]=new Array(10);
+  for(let j=0; j<10;j++){
+    row[i][j]=(i+1)*(j+1);
+  }
+}console.log(row);
+
+//power of 2
+let x='6';
+console.log((Math.log(x)/Math.log(2))%1===0);
