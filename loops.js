@@ -93,8 +93,11 @@ else{
 
 
 // Leap year
-let curr_year=new Date().getFullYear();
-curr_year%2==0 ? console.log("Even") : console.log("Odd");
+let curr_year = new Date().getFullYear();
+curr_year % 2 == 0 ? console.log("Even") : console.log("Odd");
+curr_year % 400 == 0 || (curr_year % 4 == 0 && curr_year % 100 != 0)
+  ? console.log(curr_year + " is a leap year")
+  : console.log(curr_year + " is NOT a leap year");
 
 // squares of numbers
 let squared= new Array(10);
